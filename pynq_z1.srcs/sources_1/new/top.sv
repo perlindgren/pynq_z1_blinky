@@ -26,15 +26,13 @@ module top(
     output reg led
     );
     
-    reg         r_led = 1'b0;
     reg [31:0]  r_count = 0;
     
     /* Led control block */
     always @(posedge sysclk) begin
        
             r_count <= r_count + 1;
-            r_led   <= r_count[31];
-            led <= r_count[31];   
+            led <= r_count[26];   
         
     end
 endmodule
