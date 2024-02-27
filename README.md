@@ -8,3 +8,6 @@ Here we enable ONLY the `sysclk` and the `led`.
 
 These are accessed under respective names in the `top` module.
 
+## TODO
+
+Clock IP.
